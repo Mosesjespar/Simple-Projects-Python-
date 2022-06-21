@@ -31,4 +31,5 @@ def showD():
         time.sleep(0.1)
         takess()
 
-showD()
+if __name__ == '__main__':
+    showD()
