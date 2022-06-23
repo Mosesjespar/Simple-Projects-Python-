@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Validate</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            input {
+                display: block;
+                margin-top: 1px;
+                outline: none;
+                border-radius: 0px;
+                border: 1px solid;
+                margin-top: 10px;
+                cursor: pointer;
+
+            }
+
+            button {
+                border: none;
+                width: fit-content;
+                font-size: 15px;
+                background-color: #b6aeae;
+                cursor: pointer;
+            }
+            h2{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Enter Admin Name</h2>
+        <div>
+            <form action="/validate_admin" method="post" autocomplete="off">
+                Enter Name: <input type="text" name="admin">
+                <p><input type="submit"></p>
+        </div>
+        </form>
+    </body>
+
+</html>
