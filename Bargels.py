@@ -54,12 +54,12 @@ def main():
                 guess = input('>>> ')
             # Displaying The Result
             clues = getClues(guess, secretNum)
-            print(clues,end='\n')
+            print(clues, end='\n')
             numGuesses += 1
             if guess == secretNum:
                 break
             if numGuesses > trials:
-                print('You ran out og chances')
+                print('You ran out of chances')
                 print(f'The correct guess was {secretNum}')
 
         print('Do You Want to Play Again? (YES OR NO)')
