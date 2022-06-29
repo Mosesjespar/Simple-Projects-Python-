@@ -117,8 +117,15 @@ def getMove(playerHand, money):
 
 
 def main():
-    money = 5000
     print(intro)
+    print()
+    while True:
+        print('Enter the amount of money to use...')
+        response = input('>> ')
+        if response.isdecimal():
+            money = int(response)
+            break
+    print()
     while True:  # checking if the player has run out of money
         if money <= 0:
             print('You are broke')
